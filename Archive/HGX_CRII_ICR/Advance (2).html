@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Inventory Recounting and Reconcilation
+		</title>
+		<link rel="stylesheet" href="Prototype_2_Style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+				@media only screen and (max-width: 700px) {
+				body {
+					background-color: lightblue;}
+				.Card {
+					width:100%;
+					margin:5px auto;
+					}
+				.CenterBoxTable td{
+					width:25%;
+					font-size:10px;
+				}
+				}
+		</style>
+
+	</head>
+<body onload="defaultBodyLoad()">
+
+<div class="CenterBox">
+	
+	<div class="Header">
+	
+		<img class="HeaderIcon" src="MenuIcon.png"/>
+		<text class="HeadingText">
+			IC & R
+		</text>
+		
+		
+	</div>
+		
+	<div class="CenterBoxBody">
+	
+		<div class="Card">
+			<text class="CardText">
+				Please Enter Material Code:
+			</text>
+			<br/>
+			<input class="CardText CardInput">
+			</input>
+			<br/>
+			<button class="CardText CardButton" id="LoadMaterialData" onclick="FetchMaterialData()">
+				Find SAP Stock
+			</button>
+		</div>
+		<div class="Card">
+			<text class="CardText" id="SAPStockHead">
+				SAP Book Stock
+			</text>
+			<br/>
+			<div class="loader" id="SAPStockLoader"></div>
+			<text class="CardText CardMain" id="SAPStockText">
+				
+			</text>
+		</div>
+		<div class="Card">
+			<text class="CardText" id="MESStockHead">
+				MES Book Stock
+			</text>
+			<br/>
+			<div class="loader" id="MESStockLoader"></div>
+			<text class="CardText CardMain" id="MESStockText">
+				
+			</text>
+		</div>
+		<br/>
+		<table class="CenterBoxTable" id="MESStockTable">	
+			<tr>
+				<th>
+					Logistic Unit
+				</th>
+				<th>
+					Inventory Location
+				</th>
+				<th>
+					Current Value
+				</th>
+				<th>
+					Update Value
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					KDMNH234R5
+				</td>
+				<td>
+					WTGHFWWSD65
+				</td>
+				<td style="text-align:center;">
+					21
+				</td>
+				<td>
+					<img class="SmallImageIcon" src="Substraction.png"/>
+					<input class="TableInput" placeholder="48"></input>
+					<img class="SmallImageIcon" src="Addition.png"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					KDMNH234R5
+				</td>
+				<td>
+					WTGHFWWSD65
+				</td>
+				<td style="text-align:center;">
+					21
+				</td>
+				<td>
+
+					<img class="SmallImageIcon" src="Substraction.png"/>
+					<input class="TableInput" placeholder="21"></input>
+					<img class="SmallImageIcon" src="Addition.png"/>
+					
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<button class="CardText CardButton" id="UpdateButton" style="position: absolute;right:20px;bottom:20px;background-color:#C51162;color: white;">
+				Update
+		</button>
+		<button class="CardText CardButton" id="PrintButton" style="position: absolute;right:200px;bottom:20px;">
+				Print
+		</button>
+	</div>
+	
+</div>
+<script>
+	
+	var a, b, c, d, my_timer;
+	function defaultBodyLoad(){
+		document.getElementById("SAPStockHead").style.display = "none";
+		document.getElementById("SAPStockLoader").style.display = "none";
+		document.getElementById("SAPStockText").style.display = "none";
+		document.getElementById("MESStockHead").style.display = "none";
+		document.getElementById("MESStockLoader").style.display = "none";
+		document.getElementById("MESStockText").style.display = "none";
+		document.getElementById("MESStockTable").style.display = "none";
+		document.getElementById("PrintButton").style.display = "none";
+		document.getElementById("UpdateButton").style.display = "none";
+		
+	}
+
+	function FetchMaterialData(){
+		document.getElementById("SAPStockLoader").style.display = "block";
+		my_timer = setInterval(FetchData, 1000);
+		
+	}
+
+	
+	
+</script>
+</body>
+</html>

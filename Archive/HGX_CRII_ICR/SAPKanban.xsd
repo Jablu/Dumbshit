@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.Apriso.com/SAPKanban.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="SAPKanban">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SessionContext">
+			<xs:complexType>
+			  <xs:sequence>
+				<xs:element name="EmployeeID" type="xs:int" minOccurs="0"/>
+				<xs:element name="EmployeeNo" type="xs:string" minOccurs="0"/>
+				<xs:element name="TransactionTime" type="xs:dateTime"/>
+				<xs:element name="Facility" type="xs:string" minOccurs="0"/>
+				<xs:element name="Company" type="xs:string" minOccurs="0"/>
+				<xs:element name="Division" type="xs:string" minOccurs="0"/>
+				<xs:element name="Department" type="xs:string" minOccurs="0"/>
+				<xs:element name="WorkCenter" type="xs:string" minOccurs="0"/>
+				<xs:element name="ProcessID" type="xs:int" minOccurs="0"/>
+				<xs:element name="ProcessRevision" type="xs:string" minOccurs="0"/>
+				<xs:element name="ProcessOperationID" type="xs:int" minOccurs="0"/>
+				<xs:element name="ProcessOperationRevision" type="xs:string" minOccurs="0"/>
+				<xs:element name="OperationID" type="xs:int" minOccurs="0"/>
+				<xs:element name="OperationRevision" type="xs:string" minOccurs="0"/>
+				<xs:element name="StepSequenceNo" type="xs:int" minOccurs="0"/>
+				<xs:element name="FunctionName" type="xs:string" minOccurs="0"/>
+				<xs:element name="TaskID" type="xs:int" minOccurs="0"/>
+				<xs:element name="TaskGroup" type="xs:string" minOccurs="0"/>
+				<xs:element name="TransactionGUID" type="xs:string" minOccurs="0"/>
+				<xs:element name="EquipmentID" type="xs:int" minOccurs="0"/>
+				<xs:element name="Equipment" type="xs:string" minOccurs="0"/>
+				<xs:element name="FunctionID" type="xs:int" minOccurs="0"/>
+				<xs:element name="OperationCode" type="xs:string" minOccurs="0"/>
+				<xs:element name="OprSequenceNo" type="xs:string" minOccurs="0"/>
+				<xs:element name="LocalTransactionTime" type="xs:dateTime" minOccurs="0"/>
+				<xs:element name="Signature" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="SigAction" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigStatus" type="xs:int" minOccurs="0"/>
+					  <xs:element name="SigEffectiveDate" type="xs:dateTime" minOccurs="0"/>
+					  <xs:element name="SigFirstCreateDate" type="xs:dateTime" minOccurs="0"/>
+					  <xs:element name="SigFirstEmployeeNo" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigFirstReasonCode" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigFirstComment" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigSecondDate" type="xs:dateTime" minOccurs="0"/>
+					  <xs:element name="SigSecondEmployeeNo" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigSecondReasonCode" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigSecondComment" type="xs:string" minOccurs="0"/>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+				<xs:element name="SignatureHeader" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="SigHeaderCode" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SigFUID" type="xs:string" minOccurs="0"/>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+				<xs:element name="PartnerInfo">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="RCVPOR" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SNDPRN" type="xs:string" minOccurs="0"/>
+					  <xs:element name="RCVPRN" type="xs:string" minOccurs="0"/>
+					  <xs:element name="RCVPRT" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SNDPOR" type="xs:string" minOccurs="0"/>
+					  <xs:element name="SNDPRT" type="xs:string" minOccurs="0"/>
+					  <xs:element name="CLNT" type="xs:string" minOccurs="0"/>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+				<xs:element name="PropertyBag" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+						  <xs:attribute name="Name" type="xs:string"/>
+						  <xs:attribute name="Value" type="xs:string"/>
+						</xs:complexType>
+					  </xs:element>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+				<xs:element name="PropertyBagV2" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+						  <xs:sequence>
+							<xs:element name="ValueList" minOccurs="0">
+							  <xs:complexType>
+								<xs:sequence>
+								  <xs:element name="Value" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							  </xs:complexType>
+							</xs:element>
+						  </xs:sequence>
+						  <xs:attribute name="Name" type="xs:string"/>
+						</xs:complexType>
+					  </xs:element>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+				<xs:element name="PropertyBagV3" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+						  <xs:attribute name="Name" type="xs:string"/>
+						  <xs:attribute name="Value" type="xs:string"/>
+						</xs:complexType>
+					  </xs:element>
+					  <xs:element name="CorrelatedValueSet" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+						  <xs:sequence>
+							<xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+							  <xs:complexType>
+								<xs:attribute name="Name" type="xs:string"/>
+								<xs:attribute name="Value" type="xs:string"/>
+							  </xs:complexType>
+							</xs:element>
+						  </xs:sequence>
+						  <xs:attribute name="Index" type="xs:int"/>
+						</xs:complexType>
+					  </xs:element>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+			  </xs:sequence>
+			</xs:complexType>
+		  </xs:element>
+        <xs:element name="Message">
+			<xs:complexType>
+			  <xs:sequence>
+				<xs:element name="Header">
+				  <xs:complexType>
+					<xs:sequence>
+					  <xs:element type="xs:string" name="DocumentDate"/>
+					  <xs:element type="xs:string" name="DocumentTime"/>
+					  <xs:element type="xs:string" name="PostingDate"/>
+					  <xs:element type="xs:string" name="PostingTime"/>
+					  <xs:element name="Details">
+						<xs:complexType>
+						  <xs:sequence>
+							<xs:element type="xs:string" name="Material" minOccurs="0" />
+							<xs:element type="xs:string" name="Plant" minOccurs="0" />
+							<xs:element type="xs:string" name="StorageLocation" minOccurs="0" />
+							<xs:element type="xs:string" name="WarehouseLocation" minOccurs="0" />
+							<xs:element type="xs:string" name="ReplenishmentSource" minOccurs="0" />
+							<xs:element type="xs:string" name="LogisticUnit" minOccurs="0" /><!--Kanban Card Number-->
+							<xs:element type="xs:string" name="Status" minOccurs="0" />
+						  </xs:sequence>
+						</xs:complexType>
+					  </xs:element>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+			  </xs:sequence>
+			</xs:complexType>
+		  </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

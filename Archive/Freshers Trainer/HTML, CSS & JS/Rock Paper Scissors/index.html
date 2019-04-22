@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<script>
+		 function functionSetMyCchoice(a){
+			switch(a){
+				case 1:
+				document.getElementById("submissionDiv").src = "rock.png";
+				document.getElementById("systemDefinedDiv").src = "Loading.gif";
+				break;
+				
+				case 2:
+				document.getElementById("submissionDiv").src = "paper.png";
+				document.getElementById("systemDefinedDiv").src = "Loading.gif";
+				break;
+				
+				case 3:
+				document.getElementById("submissionDiv").src = "scissors.png";
+				document.getElementById("systemDefinedDiv").src = "Loading.gif";
+				break;
+				}
+				setInterval(takeUserChoice(), 3000);
+				}
+		function takeUserChoice(){
+			
+			var b = Math.floor(Math.random() * 3) + 1;
+				switch(b){
+				case 1:
+				document.getElementById("systemDefinedDiv").src = "rock.png";
+				break;
+				
+				case 2:
+				document.getElementById("systemDefinedDiv").src = "paper.png";
+				break;
+				
+				case 3:
+				document.getElementById("systemDefinedDiv").src = "scissors.png";
+				break;
+				}
+		 }
+	</script>
+	
+	<style>
+		.submissionPlaceHolder{
+			width:120px;
+			height:120px;
+			display:inline-block;
+			float:left;
+		}
+		.userChoiceImages{
+			width:64px;
+			border:1px solid #000;
+			height:64px;
+			margin:10px;
+			box-shadow: 11px 10px 31px -10px rgba(0,0,0,0.57);
+		}
+		.Picked{
+			width:120px;
+			height:120px;
+			border:none;
+			margin:0px;
+			border:2px solid #000;
+			box-shadow: 1px 2px 31px -10px rgba(0,0,0,0.57);			
+		}
+		.userChoiceImages:hover{
+			box-shadow: 1px 5px 15px -5px rgba(0,0,0,0.57);
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<div class="submissionPlaceHolder">
+		<img id="submissionDiv" class="userChoiceImages Picked"/>
+		<img id="systemDefinedDiv" class="userChoiceImages Picked"/>
+	</div>
+	<div>
+		<img class="userChoiceImages" src="rock.png" id="rockImg" onclick="functionSetMyCchoice(1)"/>
+		<img class="userChoiceImages" src="paper.png" id="paperImg" onclick="functionSetMyCchoice(2)"/>
+		<img class="userChoiceImages" src="scissors.png" id="sciImg" onclick="functionSetMyCchoice(3)"/>
+	</div>
+	
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+	select 
+					isnull(sum(DATEDIFF(SECOND, RL.StartTime, isnull(RL.EndTime,GETUTCDATE()))),0) as StopDuration
+			from
+					AT_CYCLE_TIME CT
+					Inner join RESOURCE_LABOR RL on CT.ResourceLaborID=RL.id
+					left join REASON_CODE RC on RL.ReasonCode=rc.ReasonCode
+					
+				where	
+					CT.WorkCenter=@iWorkCenter
+					and CT.ResourceName=@iResourceName
+					and CT.ResourceType=@iResourceType
+					--and Status=@vStatus
+					and CT.Facility=@iFacility
+					and CT.WipOrderNo=@iWipOrderNo
+					and CT.WipOrderType=@iWipOrderType
+					and CT.OprSequenceNo=@iOprSequenceNo
+					and RL.LaborType=101
+					and RC.ReasonType=7
+					and CT.CycleTimeID=@CycleTimeID

@@ -1,0 +1,54 @@
+
+
+
+		select datediff(mi,StartTime,endtime),* from resource_labor where WipOrderNo = '8903190' and OprSequenceNo ='0316' and LABORtype=9
+
+		select  rl.id AS rlid,DATEDIFF(SECOND,RL.StartTime,ISNULL(RL.EndTime,GETUTCDATE()))AS [Duration(Sec)], 
+                     rl.RegularHours / NULLIF(DATEDIFF(SECOND,RL.StartTime,ISNULL(RL.EndTime,GETUTCDATE())),0) AS factor   
+				,	 
+			 CASE WHEN RL.StartTime > l.StartTime THEN RL.StartTime ELSE  l.StartTime END  as beginlaborperiod,
+                     --max(RL.StartTime, l.StartTime)
+                     CASE WHEN RL.EndTime < l.EndTime THEN RL.EndTime ELSE  l.EndTime END  as endlaborperiod,
+                     datediff(ss, CASE WHEN RL.StartTime > l.StartTime THEN RL.StartTime ELSE  l.StartTime END, CASE WHEN RL.EndTime < l.EndTime THEN RL.EndTime ELSE  l.EndTime END ) periodspan		 
+					 , l.id as laborid
+					 
+					 
+					     from labor l inner join LABOR_RESOURCE_USED lu on l.id=lu.LaborID  inner join employee e 
+                 on l.EmployeeID = e.id
+				 inner join RESOURCE_LABOR rl
+                 on rl.id = lu.ResourceLaborID
+				  join RESOURCE_ R
+                             on R.ResourceName = RL.ResourceName
+
+                             and R.resourceType = RL.ResourceType
+							  where rl.OprSequenceNo = '0316'
+                     and rl.WipOrderNo = '8903190'
+					 and rl.WipOrderType = 1
+					 and rl.Facility = 'KCC2'
+					 and rl.WorkCenter = 'SA0603'
+					 and rl.LaborType = 9
+					 and rl.starttime <> rl.endtime
+					 and rl.RegularHours <> 0
+
+		--select * from ATTENDANCE where id=100014174
+
+
+		select * from labor where id  in (100356676,
+100356677,
+100356678)
+
+
+select * from LABOR_RESOURCE_USED where ResourceLaborID in (103530866,
+103530878,
+
+
+
+
+103530879,
+103530886,
+103530891,
+103534803)
+
+
+
+select * from ATTENDANCE where id =100014174

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZLOIPRO01_MES>
+    <IDOC BEGIN="1">
+        <EDI_DC40 SEGMENT="1">
+            <TABNAM>EDI_DC40</TABNAM>
+            <MANDT>007</MANDT>
+            <DOCNUM>0000000971583295</DOCNUM>
+            <DOCREL>750</DOCREL>
+            <STATUS>30</STATUS>
+            <DIRECT>1</DIRECT>
+            <OUTMOD>4</OUTMOD>
+            <IDOCTYP>LOIPRO01</IDOCTYP>
+            <CIMTYP>ZLOIPRO01_MES</CIMTYP>
+            <MESTYP>LOIPRO</MESTYP>
+            <SNDPOR>SAPZ04</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <SNDPRN>LOGZ04C007</SNDPRN>
+            <RCVPOR>SAPPO4AAE</RCVPOR>
+            <RCVPRT>LS</RCVPRT>
+            <RCVPRN>MESPRD</RCVPRN>
+            <CREDAT>20190318</CREDAT>
+            <CRETIM>090505</CRETIM>
+            <SERIAL>20190318090505</SERIAL>
+        </EDI_DC40>
+        <E1AFKOL SEGMENT="1">
+            <AUFNR>11058734</AUFNR>
+            <APROZ>0.00</APROZ>
+            <AUART>YY06</AUART>
+            <AUFLD>20190321</AUFLD>
+            <AUTYP>10</AUTYP>
+            <BAUMNG>0.000</BAUMNG>
+            <BMEINS>PCE</BMEINS>
+            <BMENGE>1.000</BMENGE>
+            <CY_SEQNR>00000000000000</CY_SEQNR>
+            <DISPO>H02</DISPO>
+            <FEVOR>KN2</FEVOR>
+            <FHORI>040</FHORI>
+            <FREIZ>001</FREIZ>
+            <FTRMI>00000000</FTRMI>
+            <FTRMS>20190326</FTRMS>
+            <GAMNG>1.000</GAMNG>
+            <GASMG>0.000</GASMG>
+            <GETRI>00000000</GETRI>
+            <GEUZI>000000</GEUZI>
+            <GLTRI>00000000</GLTRI>
+            <GLTRP>20190328</GLTRP>
+            <GLTRS>20190327</GLTRS>
+            <GLUZP>000000</GLUZP>
+            <GLUZS>153000</GLUZS>
+            <GMEIN>PCE</GMEIN>
+            <GSTRI>00000000</GSTRI>
+            <GSTRP>20190327</GSTRP>
+            <GSTRS>20190327</GSTRS>
+            <GSUZP>000000</GSUZP>
+            <GSUZS>143319</GSUZS>
+            <IASMG>0.000</IASMG>
+            <IGMNG>0.000</IGMNG>
+            <LODIV>0.000</LODIV>
+            <MATNR>KM51361361V000</MATNR>
+            <PLAUF>20190321</PLAUF>
+			
+            <PLNAL>1</PLNAL>
+            <PLNME>PCE</PLNME>
+            <PLNNR>50341496</PLNNR>
+            <PLNTY>N</PLNTY>
+            <PLSVB>99999999.000</PLSVB>
+            <PLSVN>0.000</PLSVN>
+            <PSPEL>00000000</PSPEL>
+            <RMNGA>0.000</RMNGA>
+            <SBMEH>PCE</SBMEH>
+            <SBMNG>1.000</SBMNG>
+            <SICHZ>000</SICHZ>
+            <SLSBS>0.000</SLSBS>
+            <SLSVN>0.000</SLSVN>
+            <STLAL>1</STLAL>
+            <STLAN>K</STLAN>
+            <STLNR>35991002</STLNR>
+            <TERKZ>2</TERKZ>
+            <VORGZ>000</VORGZ>
+            <WERKS>KNEE</WERKS>
+            <PRUEFLOS>000000000000</PRUEFLOS>
+            <KDPOS>000000</KDPOS>
+            <ZE1AFKOL SEGMENT="1">
+                <SYSTEM_STATUS>CRTD DLFL CNC  MACM SETC</SYSTEM_STATUS>
+            </ZE1AFKOL>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_PROCESS</ATNAM>
+                <ATBEZ>Delivery process</ATBEZ>
+                <ATWRT>A</ATWRT>
+                <ATWTB>A-process</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_COMPONENT_GENERAL_INFO</ATNAM>
+                <ATBEZ>Component general information</ATBEZ>
+                <ATWRT>1</ATWRT>
+                <ATWTB>1, Standard acc. SO-xx.xx.xxx</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_LANDINGS_TOTAL</ATNAM>
+                <ATBEZ>Number of landings</ATBEZ>
+                <ATFLV>  3.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_INDICATION_LANGUAGE</ATNAM>
+                <ATBEZ>Indication language</ATBEZ>
+                <ATWRT>EN</ATWRT>
+                <ATWTB>English</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_ELEV_COUNTRY_CODE</ATNAM>
+                <ATBEZ>Elevator country code</ATBEZ>
+                <ATWRT>AU</ATWRT>
+                <ATWTB>AUSTRALIA</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>KCRF_VBAP_WERKS</ATNAM>
+                <ATBEZ>Plant sales order entry</ATBEZ>
+                <ATWRT>KNEH</ATWRT>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_PRODUCT_RELEASE</ATNAM>
+                <ATBEZ>Product release</ATBEZ>
+                <ATWRT>G.1</ATWRT>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_PRODUCT_CATEGORY</ATNAM>
+                <ATBEZ>Product category</ATBEZ>
+                <ATWRT>PFI__RESIF_A</ATWRT>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_VIGIK_READER</ATNAM>
+                <ATBEZ>Vigik readers quantity</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_RFID_KEY_ADDITIONAL</ATNAM>
+                <ATBEZ>Qty of additional RFID keys</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_BDO_DOOR_LEAF_OPENING_1</ATNAM>
+                <ATBEZ>1. BDO Door leaf opening type</ATBEZ>
+                <ATWRT>1</ATWRT>
+                <ATWTB>1; Pushing</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_BDO_DOOR_LEAF_OPENING_3</ATNAM>
+                <ATBEZ>3. BDO door leaf opening type</ATBEZ>
+                <ATWRT>1</ATWRT>
+                <ATWTB>1; Pushing</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_BDO_DOOR_LEAF_OPENING_2</ATNAM>
+                <ATBEZ>2. BDO Door leaf opening type</ATBEZ>
+                <ATWRT>2</ATWRT>
+                <ATWTB>2; Pulling</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_BDO_DOOR_LEAF_OPENING_4</ATNAM>
+                <ATBEZ>4. BDO door leaf opening type</ATBEZ>
+                <ATWRT>2</ATWRT>
+                <ATWTB>2; Pulling</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_PFI_INTERCOM_2</ATNAM>
+                <ATBEZ>2. PFI Intercom type</ATBEZ>
+                <ATWRT>3</ATWRT>
+                <ATWTB>3; No reader</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>TYP_PFI_INTERCOM_1</ATNAM>
+                <ATBEZ>1. PFI Intercom type</ATBEZ>
+                <ATWRT>1</ATWRT>
+                <ATWTB>1; Standard</ATWTB>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_HID_READER</ATNAM>
+                <ATBEZ>PFI HID reader qty</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>DIM_BDO_DOOR_LEAF_WIDTH_1</ATNAM>
+                <ATBEZ>1. BDO door leaf width</ATBEZ>
+                <ATFLV>  1.0000000000000000E+03</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>DIM_BDO_DOOR_LEAF_WIDTH_2</ATNAM>
+                <ATBEZ>2. BDO door leaf width</ATBEZ>
+                <ATFLV>  1.0000000000000000E+03</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>DIM_BDO_DOOR_LEAF_WIDTH_4</ATNAM>
+                <ATBEZ>4. BDO door leaf width</ATBEZ>
+                <ATFLV>  1.2000000000000000E+03</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>DIM_BDO_DOOR_LEAF_WIDTH_3</ATNAM>
+                <ATBEZ>3. BDO door leaf width</ATBEZ>
+                <ATFLV>  1.2000000000000000E+03</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_BDO_OPERATOR_1</ATNAM>
+                <ATBEZ>1. Building door operator qty</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_BDO_OPERATOR_2</ATNAM>
+                <ATBEZ>2. Building door operator qty</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_BDO_OPERATOR_4</ATNAM>
+                <ATBEZ>4. Building door operator qty</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_BDO_OPERATOR_3</ATNAM>
+                <ATBEZ>3. Building door operator qty</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_CARD_READER</ATNAM>
+                <ATBEZ>PFI card reader quantity</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_INTERCOM_2</ATNAM>
+                <ATBEZ>2. PFI Intercom quantity</ATBEZ>
+                <ATFLV>  0.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_PFI_INTERCOM_1</ATNAM>
+                <ATBEZ>1. PFI Intercom quantity</ATBEZ>
+                <ATFLV>  2.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>QTY_APARTMENT</ATNAM>
+                <ATBEZ>Apartment quantity</ATBEZ>
+                <ATFLV>  3.0000000000000000E+00</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <ZE1AFKOL_CFG_CHAR SEGMENT="1">
+                <ATNAM>VAL_KONE_EQUIPMENT_NUMBER</ATNAM>
+                <ATBEZ>KONE equipment number</ATBEZ>
+                <ATFLV>  4.3745887000000000E+07</ATFLV>
+                <ATFLB>  0.0000000000000000E+00</ATFLB>
+            </ZE1AFKOL_CFG_CHAR>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0001</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0028</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0033</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0076</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0215</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0291</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0340</STAT>
+            </E1JSTKL>
+            <E1JSTKL SEGMENT="1">
+                <STAT>I0361</STAT>
+            </E1JSTKL>
+            <E1AFFLL SEGMENT="1">
+                <APLZL>00000002</APLZL>
+                <AUSCHL>2</AUSCHL>
+                <FLGAT>0</FLGAT>
+                <PLNFL>0</PLNFL>
+                <E1AFVOL SEGMENT="1">
+                    <VORNR>0150</VORNR>
+                    <ABRUE>0.000000000000000E+00</ABRUE>
+                    <ANZZL>0</ANZZL>
+                    <ARBEI>0.0</ARBEI>
+                    <ARBID>10115561</ARBID>
+                    <ARUZE>MIN</ARUZE>
+                    <AUFAK>0.000</AUFAK>
+                    <BEARZ>3.000000000000000E+01</BEARZ>
+                    <BEAZE>MIN</BEAZE>
+                    <BMSCH>1.000</BMSCH>
+                    <CY_SEQNRV>00000000000000</CY_SEQNRV>
+                    <DAUNO>0.0</DAUNO>
+                    <DAUMI>0.0</DAUMI>
+                    <FSAVD>20190327</FSAVD>
+                    <FSAVZ>143319</FSAVZ>
+                    <FSEDD>20190327</FSEDD>
+                    <FSEDZ>150719</FSEDZ>
+                    <FSELD>20190327</FSELD>
+                    <FSELZ>150719</FSELZ>
+                    <FSEVD>20190327</FSEVD>
+                    <FSEVZ>150719</FSEVZ>
+                    <FSSAD>20190327</FSSAD>
+                    <FSSAZ>150719</FSSAZ>
+                    <FSSBD>20190327</FSSBD>
+                    <FSSBZ>143319</FSSBZ>
+                    <FSSLD>20190327</FSSLD>
+                    <FSSLZ>150719</FSSLZ>
+                    <KALID>FI</KALID>
+                    <LAR01>14110</LAR01>
+                    <LIEGZ>0.000000000000000E+00</LIEGZ>
+                    <LMNGA>0.000</LMNGA>
+                    <LTXA1>MODULE ASSEMBLY &amp; CONFIGURATION</LTXA1>
+                    <MEINH>PCE</MEINH>
+                    <MINWE>0.000</MINWE>
+                    <MGVRG>1.000</MGVRG>
+                    <PEINH>0</PEINH>
+                    <PREIS>0.00</PREIS>
+                    <PRZNT>0</PRZNT>
+                    <RMNGA>0.000</RMNGA>
+                    <RSTZE>MIN</RSTZE>
+                    <RUEST>0.000000000000000E+00</RUEST>
+                    <SPLIM>0</SPLIM>
+                    <SSAVD>20190327</SSAVD>
+                    <SSAVZ>143319</SSAVZ>
+                    <SSEDD>20190327</SSEDD>
+                    <SSEDZ>150719</SSEDZ>
+                    <SSELD>20190327</SSELD>
+                    <SSELZ>150719</SSELZ>
+                    <SSEVD>20190327</SSEVD>
+                    <SSEVZ>150719</SSEVZ>
+                    <SSSAD>20190327</SSSAD>
+                    <SSSAZ>150719</SSSAZ>
+                    <SSSBD>20190327</SSSBD>
+                    <SSSBZ>143319</SSSBZ>
+                    <SSSLD>20190327</SSSLD>
+                    <SSSLZ>150719</SSSLZ>
+                    <STEUS>Y002</STEUS>
+                    <TRANZ>0.000000000000000E+00</TRANZ>
+                    <USR04>0.000</USR04>
+                    <USR05>0.000</USR05>
+                    <VGE01>MIN</VGE01>
+                    <VGW01>30.000</VGW01>
+                    <VGW02>0.000</VGW02>
+                    <VGW03>0.000</VGW03>
+                    <VGW04>0.000</VGW04>
+                    <VGW05>0.000</VGW05>
+                    <VGW06>0.000</VGW06>
+                    <VGWTS>Y001</VGWTS>
+                    <WARTZ>0.000000000000000E+00</WARTZ>
+                    <XMNGA>0.000</XMNGA>
+                    <ZLPRO>0.000</ZLPRO>
+                    <ZMINB>0.000</ZMINB>
+                    <ZMINU>0.000</ZMINU>
+                    <ZTMIN>0.000</ZTMIN>
+                    <ZWMIN>0.000</ZWMIN>
+                    <ZWNOR>0.000</ZWNOR>
+                    <ISAVD>00000000</ISAVD>
+                    <IEAVD>00000000</IEAVD>
+                    <ISDD>00000000</ISDD>
+                    <ISDZ>000000</ISDZ>
+                    <IEDD>00000000</IEDD>
+                    <IEDZ>000000</IEDZ>
+                    <ANZMA>0.00</ANZMA>
+                    <ARBPL>KNE1EMO1</ARBPL>
+                    <ZE1AFVOL SEGMENT="1">
+                        <ARBPL>KNE1EMO1</ARBPL>
+                        <RUECK>0845326448</RUECK>
+                        <SLWID>BARCODE</SLWID>
+                        <BARC_ACTIVE>X</BARC_ACTIVE>
+                        <CONFIRM_AUTOM>X</CONFIRM_AUTOM>
+                    </ZE1AFVOL>
+                    <E1JSTVL SEGMENT="1">
+                        <STAT>I0001</STAT>
+                    </E1JSTVL>
+                </E1AFVOL>
+                <E1AFVOL SEGMENT="1">
+                    <VORNR>0270</VORNR>
+                    <ABRUE>0.000000000000000E+00</ABRUE>
+                    <ANZZL>0</ANZZL>
+                    <ARBEI>0.0</ARBEI>
+                    <ARBID>10110692</ARBID>
+                    <ARUZE>MIN</ARUZE>
+                    <AUFAK>0.000</AUFAK>
+                    <BEARZ>1.666666666666667E-02</BEARZ>
+                    <BEAZE>MIN</BEAZE>
+                    <BMSCH>1.000</BMSCH>
+                    <CY_SEQNRV>00000000000000</CY_SEQNRV>
+                    <DAUNO>0.0</DAUNO>
+                    <DAUMI>0.0</DAUMI>
+                    <FSAVD>20190327</FSAVD>
+                    <FSAVZ>150719</FSAVZ>
+                    <FSEDD>20190327</FSEDD>
+                    <FSEDZ>150720</FSEDZ>
+                    <FSELD>20190327</FSELD>
+                    <FSELZ>150720</FSELZ>
+                    <FSEVD>20190327</FSEVD>
+                    <FSEVZ>150720</FSEVZ>
+                    <FSSAD>20190327</FSSAD>
+                    <FSSAZ>150720</FSSAZ>
+                    <FSSBD>20190327</FSSBD>
+                    <FSSBZ>150719</FSSBZ>
+                    <FSSLD>20190327</FSSLD>
+                    <FSSLZ>150720</FSSLZ>
+                    <KALID>FI</KALID>
+                    <LAR01>14110</LAR01>
+                    <LIEGZ>0.000000000000000E+00</LIEGZ>
+                    <LMNGA>0.000</LMNGA>
+                    <LTXA1>REWORK</LTXA1>
+                    <MEINH>PCE</MEINH>
+                    <MINWE>0.000</MINWE>
+                    <MGVRG>1.000</MGVRG>
+                    <PEINH>0</PEINH>
+                    <PREIS>0.00</PREIS>
+                    <PRZNT>0</PRZNT>
+                    <RMNGA>0.000</RMNGA>
+                    <RSTZE>MIN</RSTZE>
+                    <RUEST>0.000000000000000E+00</RUEST>
+                    <SPLIM>0</SPLIM>
+                    <SSAVD>20190327</SSAVD>
+                    <SSAVZ>150719</SSAVZ>
+                    <SSEDD>20190327</SSEDD>
+                    <SSEDZ>150720</SSEDZ>
+                    <SSELD>20190327</SSELD>
+                    <SSELZ>150720</SSELZ>
+                    <SSEVD>20190327</SSEVD>
+                    <SSEVZ>150720</SSEVZ>
+                    <SSSAD>20190327</SSSAD>
+                    <SSSAZ>150720</SSSAZ>
+                    <SSSBD>20190327</SSSBD>
+                    <SSSBZ>150719</SSSBZ>
+                    <SSSLD>20190327</SSSLD>
+                    <SSSLZ>150720</SSSLZ>
+                    <STEUS>Y002</STEUS>
+                    <TRANZ>0.000000000000000E+00</TRANZ>
+                    <USR04>0.000</USR04>
+                    <USR05>0.000</USR05>
+                    <VGE01>MIN</VGE01>
+                    <VGW01>0.010</VGW01>
+                    <VGW02>0.000</VGW02>
+                    <VGW03>0.000</VGW03>
+                    <VGW04>0.000</VGW04>
+                    <VGW05>0.000</VGW05>
+                    <VGW06>0.000</VGW06>
+                    <VGWTS>Y001</VGWTS>
+                    <WARTZ>0.000000000000000E+00</WARTZ>
+                    <XMNGA>0.000</XMNGA>
+                    <ZLPRO>0.000</ZLPRO>
+                    <ZMINB>0.000</ZMINB>
+                    <ZMINU>0.000</ZMINU>
+                    <ZTMIN>0.000</ZTMIN>
+                    <ZWMIN>0.000</ZWMIN>
+                    <ZWNOR>0.000</ZWNOR>
+                    <ISAVD>00000000</ISAVD>
+                    <IEAVD>00000000</IEAVD>
+                    <ISDD>00000000</ISDD>
+                    <ISDZ>000000</ISDZ>
+                    <IEDD>00000000</IEDD>
+                    <IEDZ>000000</IEDZ>
+                    <ANZMA>0.00</ANZMA>
+                    <ARBPL>KNE1ERWK</ARBPL>
+                    <ZE1AFVOL SEGMENT="1">
+                        <ARBPL>KNE1ERWK</ARBPL>
+                        <RUECK>0845326449</RUECK>
+                        <SLWID>BARCODE</SLWID>
+                        <BARC_ACTIVE>X</BARC_ACTIVE>
+                        <CONFIRM_AUTOM>X</CONFIRM_AUTOM>
+                    </ZE1AFVOL>
+                    <E1JSTVL SEGMENT="1">
+                        <STAT>I0001</STAT>
+                    </E1JSTVL>
+                </E1AFVOL>
+                <E1AFVOL SEGMENT="1">
+                    <VORNR>0275</VORNR>
+                    <ABRUE>0.000000000000000E+00</ABRUE>
+                    <ANZZL>0</ANZZL>
+                    <ARBEI>0.0</ARBEI>
+                    <ARBID>10038935</ARBID>
+                    <ARUZE>MIN</ARUZE>
+                    <AUFAK>0.000</AUFAK>
+                    <BEARZ>2.000000000000000E+01</BEARZ>
+                    <BEAZE>MIN</BEAZE>
+                    <BMSCH>1.000</BMSCH>
+                    <CY_SEQNRV>00000000000000</CY_SEQNRV>
+                    <DAUNO>0.0</DAUNO>
+                    <DAUMI>0.0</DAUMI>
+                    <FSAVD>20190327</FSAVD>
+                    <FSAVZ>150720</FSAVZ>
+                    <FSEDD>20190327</FSEDD>
+                    <FSEDZ>153000</FSEDZ>
+                    <FSELD>20190327</FSELD>
+                    <FSELZ>153000</FSELZ>
+                    <FSEVD>20190327</FSEVD>
+                    <FSEVZ>153000</FSEVZ>
+                    <FSSAD>20190327</FSSAD>
+                    <FSSAZ>153000</FSSAZ>
+                    <FSSBD>20190327</FSSBD>
+                    <FSSBZ>150720</FSSBZ>
+                    <FSSLD>20190327</FSSLD>
+                    <FSSLZ>153000</FSSLZ>
+                    <KALID>FI</KALID>
+                    <LAR01>14110</LAR01>
+                    <LIEGZ>0.000000000000000E+00</LIEGZ>
+                    <LMNGA>0.000</LMNGA>
+                    <LTXA1>PACKING</LTXA1>
+                    <MEINH>PCE</MEINH>
+                    <MINWE>0.000</MINWE>
+                    <MGVRG>1.000</MGVRG>
+                    <PEINH>0</PEINH>
+                    <PREIS>0.00</PREIS>
+                    <PRZNT>0</PRZNT>
+                    <RMNGA>0.000</RMNGA>
+                    <RSTZE>MIN</RSTZE>
+                    <RUEST>0.000000000000000E+00</RUEST>
+                    <SPLIM>0</SPLIM>
+                    <SSAVD>20190327</SSAVD>
+                    <SSAVZ>150720</SSAVZ>
+                    <SSEDD>20190327</SSEDD>
+                    <SSEDZ>153000</SSEDZ>
+                    <SSELD>20190327</SSELD>
+                    <SSELZ>153000</SSELZ>
+                    <SSEVD>20190327</SSEVD>
+                    <SSEVZ>153000</SSEVZ>
+                    <SSSAD>20190327</SSSAD>
+                    <SSSAZ>153000</SSSAZ>
+                    <SSSBD>20190327</SSSBD>
+                    <SSSBZ>150720</SSSBZ>
+                    <SSSLD>20190327</SSSLD>
+                    <SSSLZ>153000</SSSLZ>
+                    <STEUS>Y001</STEUS>
+                    <TRANZ>0.000000000000000E+00</TRANZ>
+                    <USR04>0.000</USR04>
+                    <USR05>0.000</USR05>
+                    <VGE01>MIN</VGE01>
+                    <VGW01>20.000</VGW01>
+                    <VGW02>0.000</VGW02>
+                    <VGW03>0.000</VGW03>
+                    <VGW04>0.000</VGW04>
+                    <VGW05>0.000</VGW05>
+                    <VGW06>0.000</VGW06>
+                    <VGWTS>Y001</VGWTS>
+                    <WARTZ>0.000000000000000E+00</WARTZ>
+                    <XMNGA>0.000</XMNGA>
+                    <ZLPRO>0.000</ZLPRO>
+                    <ZMINB>0.000</ZMINB>
+                    <ZMINU>0.000</ZMINU>
+                    <ZTMIN>0.000</ZTMIN>
+                    <ZWMIN>0.000</ZWMIN>
+                    <ZWNOR>0.000</ZWNOR>
+                    <ISAVD>00000000</ISAVD>
+                    <IEAVD>00000000</IEAVD>
+                    <ISDD>00000000</ISDD>
+                    <ISDZ>000000</ISDZ>
+                    <IEDD>00000000</IEDD>
+                    <IEDZ>000000</IEDZ>
+                    <ANZMA>0.00</ANZMA>
+                    <ARBPL>KNE1EPAC</ARBPL>
+                    <ZE1AFVOL SEGMENT="1">
+                        <ARBPL>KNE1EPAC</ARBPL>
+                        <RUECK>0845326450</RUECK>
+                        <SLWID>BARCODE</SLWID>
+                        <BARC_ACTIVE>X</BARC_ACTIVE>
+                        <CONFIRM_AUTOM>X</CONFIRM_AUTOM>
+                    </ZE1AFVOL>
+                    <E1JSTVL SEGMENT="1">
+                        <STAT>I0001</STAT>
+                    </E1JSTVL>
+                </E1AFVOL>
+            </E1AFFLL>
+            <E1AFPOL SEGMENT="1">
+                <POSNR>0001</POSNR>
+                <AMEIN>PCE</AMEIN>
+                <BMENG>0.000</BMENG>
+                <KDAUF>350350859</KDAUF>
+                <KDEIN>0000</KDEIN>
+                <KDPOS>000020</KDPOS>
+                <LGORT>1000</LGORT>
+                <MATNR>KM51361361V000</MATNR>
+                <MEINS>PCE</MEINS>
+                <PLNUM>109798246</PLNUM>
+                <PSAMG>0.000</PSAMG>
+                <PSMNG>1.000</PSMNG>
+                <UMREN>1</UMREN>
+                <UMREZ>1</UMREZ>
+                <WEBAZ>6</WEBAZ>
+                <WEMNG>0.000</WEMNG>
+                <PWERK>KNEE</PWERK>
+                <ZE1AFPOL_SOI SEGMENT="1">
+                    <KUNNR_SL>KEP</KUNNR_SL>
+                    <PROJ_NAME>PILOT-</PROJ_NAME>
+                    <EQUNR>000000000043745887</EQUNR>
+                    <PO_EBELN_FL>4525761123</PO_EBELN_FL>
+                    <PO_EBELN_SL>4525816876</PO_EBELN_SL>
+                    <PO_EBELP_SL>00010</PO_EBELP_SL>
+                    <PO_EINDT_SL>20190410</PO_EINDT_SL>
+                    <PO_WERKS_SL>KNEH</PO_WERKS_SL>
+                    <FL_REF>4525761123</FL_REF>
+                </ZE1AFPOL_SOI>
+                <ZE1AFPOL_SOI_ADDR SEGMENT="1">
+                    <PARTNER_Q>OSF</PARTNER_Q>
+                    <PARTNER_ID>GSLM</PARTNER_ID>
+                    <ADDRNUMBER>0002804529</ADDRNUMBER>
+                    <NAME1>KONE Industrial Oy</NAME1>
+                    <STREET>Kuumolankatu</STREET>
+                    <HOUSE_NUM1>1</HOUSE_NUM1>
+                    <CITY1>HYVINKÄÄ</CITY1>
+                    <POST_CODE1>05830</POST_CODE1>
+                    <COUNTRY>FI</COUNTRY>
+                </ZE1AFPOL_SOI_ADDR>
+                <ZE1AFPOL_SOI_ADDR SEGMENT="1">
+                    <PARTNER_Q>AG</PARTNER_Q>
+                    <PARTNER_ID>KEP</PARTNER_ID>
+                    <ADDRNUMBER>0000482851</ADDRNUMBER>
+                    <NAME1>KONE Elevators Pty Ltd</NAME1>
+                    <STREET>205 Euston Road</STREET>
+                    <CITY1>ALEXANDRIA</CITY1>
+                    <POST_CODE1>2015</POST_CODE1>
+                    <REGION>NSW</REGION>
+                    <COUNTRY>AU</COUNTRY>
+                </ZE1AFPOL_SOI_ADDR>
+                <ZE1AFPOL_SOI_ADDR SEGMENT="1">
+                    <PARTNER_Q>WE</PARTNER_Q>
+                    <PARTNER_ID>KEP</PARTNER_ID>
+                    <ADDRNUMBER>9009392619</ADDRNUMBER>
+                    <NAME1>KONE Elevators PTY LTD</NAME1>
+                    <STREET>1 Moorebank Avenue, Building 1</STREET>
+                    <CITY1>Sydney Port</CITY1>
+                    <POST_CODE1>2170</POST_CODE1>
+                    <REGION>NSW</REGION>
+                    <COUNTRY>AU</COUNTRY>
+                </ZE1AFPOL_SOI_ADDR>
+                <ZE1AFPOL_SOI_ADDR SEGMENT="1">
+                    <PARTNER_Q>PLA</PARTNER_Q>
+                    <PARTNER_ID>KNEH</PARTNER_ID>
+                    <ADDRNUMBER>0000119440</ADDRNUMBER>
+                    <NAME1>DHL Freight GmbH</NAME1>
+                    <STREET>Auf der Hohen Schaar.</STREET>
+                    <HOUSE_NUM1>7</HOUSE_NUM1>
+                    <CITY1>Hamburg</CITY1>
+                    <POST_CODE1>21107</POST_CODE1>
+                    <REGION>02</REGION>
+                    <COUNTRY>DE</COUNTRY>
+                </ZE1AFPOL_SOI_ADDR>
+            </E1AFPOL>
+        </E1AFKOL>
+    </IDOC>
+</ZLOIPRO01_MES>

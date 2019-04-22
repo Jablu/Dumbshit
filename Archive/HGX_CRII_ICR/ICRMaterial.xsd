@@ -1,0 +1,53 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.Apriso.com/ICRMaterial.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ICRMaterial" type="icr:ICRMaterialType" xmlns:icr="http://www.Apriso.com/ICRMaterial.xsd"/>
+  <xs:complexType name="PartnerInfoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="RCVPOR"/>
+      <xs:element type="xs:string" name="SNDPRN"/>
+      <xs:element type="xs:string" name="RCVPRN"/>
+      <xs:element type="xs:string" name="RCVPRT"/>
+      <xs:element type="xs:string" name="SNDPOR"/>
+      <xs:element type="xs:string" name="SNDPRT"/>
+      <xs:element type="xs:byte" name="CLNT"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SessionContextType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="EmployeeID"/>
+      <xs:element type="xs:short" name="EmployeeNo"/>
+      <xs:element type="xs:dateTime" name="TransactionTime"/>
+      <xs:element type="xs:string" name="Facility"/>
+      <xs:element type="xs:string" name="Department"/>
+      <xs:element type="xs:int" name="OperationID"/>
+      <xs:element type="xs:string" name="OperationRevision"/>
+      <xs:element type="xs:byte" name="StepSequenceNo"/>
+      <xs:element type="xs:string" name="FunctionName"/>
+      <xs:element type="xs:string" name="TransactionGUID"/>
+      <xs:element type="xs:byte" name="EquipmentID"/>
+      <xs:element type="xs:int" name="FunctionID"/>
+      <xs:element type="xs:string" name="OperationCode"/>
+      <xs:element type="xs:string" name="OprSequenceNo"/>
+      <xs:element type="xs:dateTime" name="LocalTransactionTime"/>
+      <xs:element type="icr:PartnerInfoType" name="PartnerInfo" xmlns:icr="http://www.Apriso.com/ICRMaterial.xsd"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeaderType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="QueryMessageCode"/>
+      <xs:element type="xs:string" name="MaterialName"/>
+      <xs:element type="xs:string" name="UOM"/>
+      <xs:element type="xs:float" name="Quantity"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MessageType">
+    <xs:sequence>
+      <xs:element type="icr:HeaderType" name="Header" xmlns:icr="http://www.Apriso.com/ICRMaterial.xsd"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ICRMaterialType">
+    <xs:sequence>
+      <xs:element type="icr:SessionContextType" name="SessionContext" xmlns:icr="http://www.Apriso.com/ICRMaterial.xsd"/>
+      <xs:element type="icr:MessageType" name="Message" xmlns:icr="http://www.Apriso.com/ICRMaterial.xsd"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

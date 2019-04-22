@@ -1,0 +1,44 @@
+﻿<SAPKanban xmlns="http://www.Apriso.com/SAPKanban.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SessionContext>
+    <EmployeeID>100001117</EmployeeID>
+    <EmployeeNo>19842</EmployeeNo>
+    <TransactionTime>2018-09-13T11:07:06.4615918</TransactionTime>
+    <Facility>KNEE</Facility>
+    <Department />
+    <OperationID>100001274</OperationID>
+    <OperationRevision>K1X.PH1.1.001</OperationRevision>
+    <StepSequenceNo>1</StepSequenceNo>
+    <FunctionName>WriteXML</FunctionName>
+    <TransactionGUID>T234003</TransactionGUID>
+    <EquipmentID>0</EquipmentID>
+    <FunctionID>100093012</FunctionID>
+    <OperationCode>SAPKanban.Send_Process</OperationCode>
+    <OprSequenceNo />
+    <LocalTransactionTime>2018-09-13T11:07:06.5084684</LocalTransactionTime>
+    <PartnerInfo>
+      <RCVPOR>SAPC64</RCVPOR>
+      <SNDPRN>FLEXNET</SNDPRN>
+      <RCVPRN>SAPLOG</RCVPRN>
+      <RCVPRT>LS</RCVPRT>
+      <SNDPOR>A000000022</SNDPOR>
+      <SNDPRT>LS</SNDPRT>
+      <CLNT>100</CLNT>
+    </PartnerInfo>
+  </SessionContext>
+  <Message>
+    <Header>
+      <DocumentDate>20180913</DocumentDate>
+      <DocumentTime>110706</DocumentTime>
+      <PostingDate>20180913</PostingDate>
+      <PostingTime>110706</PostingTime>
+      <Details>
+        <Material>KM51205779G02</Material>
+        <Plant>KNEE</Plant>
+        <StorageLocation />
+        <WarehouseLocation>E50C05D02</WarehouseLocation>
+        <ReplenishmentSource>External Source</ReplenishmentSource>
+        <LogisticUnit>LUNE10024704</LogisticUnit>
+      </Details>
+    </Header>
+  </Message>
+</SAPKanban>

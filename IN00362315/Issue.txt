@@ -1,0 +1,7 @@
+HGX004: (low priority case)
+My assumption is that 
+	
+	When having K1X_LastOperatorLogoutStopOperation enabled always latest logout stops all orders. 
+	(Even in case where there remains operators at the workstation) 
+	
+	Expected behavior is that when last operator logs out then orders are stopped.

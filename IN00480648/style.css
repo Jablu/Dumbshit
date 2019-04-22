@@ -1,0 +1,31 @@
+body{
+	margin:0px;
+}
+.KONE_Customized_Grid{
+	font-family:'Century Gothic';
+	border-collapse: collapse;
+	width: 100%;
+	padding:0px;
+}
+.KONE_Customized_Grid th{
+	height:40px;
+	margin:0px;
+	color:#fff;
+	min-width:160px;
+	border:1px solid black;
+	background-color:#304FFE;
+	font-style:bold;
+	font-size:24px;
+}
+.KONE_Customized_Grid tr{
+	height:32px;
+	border:1px solid black;
+	background-color:#E8EAF6;
+}
+.KONE_Customized_Grid td{
+	padding:6px;
+	border:1px solid black;
+}
+.KONE_Customized_Grid tr:nth-child(even) {
+	background-color: #fefefe;
+}

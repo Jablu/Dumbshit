@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransactionDataQueueInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <TransactionDataQueueID>100225062</TransactionDataQueueID>
+    <TransactionName>ZLOIPRO01_MES</TransactionName>
+    <DestinationClient />
+    <DestinationURL />
+    <SourceClient />
+    <AlertName />
+    <BatchMode />
+    <HttpAdapterName />
+    <UserDefinedFileName />
+    <MQSeriesAdapterName />
+</TransactionDataQueueInfo>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<TransactionDataQueueInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <TransactionDataQueueID>100223887</TransactionDataQueueID>
+    <TransactionName>ZLOIPRO01_MES</TransactionName>
+    <DestinationClient />
+    <DestinationURL />
+    <SourceClient />
+    <AlertName />
+    <BatchMode />
+    <HttpAdapterName />
+    <UserDefinedFileName />
+    <MQSeriesAdapterName />
+</TransactionDataQueueInfo>

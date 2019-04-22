@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProdConf xmlns="http://www.Apriso.com/ProdConf.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SessionContext>
+        <EmployeeID>100000040</EmployeeID>
+        <EmployeeNo>64008245</EmployeeNo>
+        <TransactionTime>2019-01-02T07:54:41.2258254</TransactionTime>
+        <Facility>KNEX</Facility>
+        <Department />
+        <OperationID>100001567</OperationID>
+        <OperationRevision>K1X.PH1.1.002</OperationRevision>
+        <StepSequenceNo>1</StepSequenceNo>
+        <FunctionName>WriteXML</FunctionName>
+        <TransactionGUID>T22859</TransactionGUID>
+        <EquipmentID>0</EquipmentID>
+        <FunctionID>100205611</FunctionID>
+        <OperationCode>ProdConfirmation.SAP.WriteXml_Process</OperationCode>
+        <OprSequenceNo />
+        <LocalTransactionTime>2019-01-02T09:54:41.2588093</LocalTransactionTime>
+        <PartnerInfo>
+            <RCVPOR>SAPC64</RCVPOR>
+            <SNDPRN>FLEXNET</SNDPRN>
+            <RCVPRN>SAPLOG</RCVPRN>
+            <RCVPRT>LS</RCVPRT>
+            <SNDPOR>A000000022</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <CLNT>100</CLNT>
+        </PartnerInfo>
+        <PropertyBagV2>
+            <Item Name="PostingDate">
+                <ValueList>
+                    <Value>20190102</Value>
+                </ValueList>
+            </Item>
+            <Item Name="PostingTime">
+                <ValueList>
+                    <Value>095441</Value>
+                </ValueList>
+            </Item>
+        </PropertyBagV2>
+    </SessionContext>
+    <Message>
+        <Header>
+            <ProdConfMessageID>17997510-e014-4e7f-9642-118b0cbce6fc</ProdConfMessageID>
+            <Plant>KNEX</Plant>
+            <ProductionNo>10372938</ProductionNo>
+            <OperationConfirmationNo>0811161805</OperationConfirmationNo>
+            <OperationNo>0030</OperationNo>
+            <FinalConf>X</FinalConf>
+            <ClearRes>X</ClearRes>
+            <WorkCenter>KNE1XAS2</WorkCenter>
+            <StartDate>20181221</StartDate>
+            <StartTime>084809</StartTime>
+            <FinishDate>20190102</FinishDate>
+            <FinishTime>094719</FinishTime>
+            <TimeSpanUnit>MIN</TimeSpanUnit>
+            <ExecutionTimeSimple>419</ExecutionTimeSimple>
+            <ExecutionTimeLabor>303</ExecutionTimeLabor>
+            <TotalDownTime>0</TotalDownTime>
+            <DownTimes />
+            <Components>
+                <Component>
+                    <ProductNo>KM1370509G12</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>1</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM160047H02</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock>E</SpecialStock>
+                    <SalesOrder>350325800</SalesOrder>
+                    <SalesOrderItem>20</SalesOrderItem>
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>3</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM249968</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>11</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM252040</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>13</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM277202</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>16</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM50032118V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>4</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51034648V001</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>8</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51115158V001</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>9</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51117548V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>7</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51119598V010</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>2</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>6</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51119986</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>15</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51141270V018</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>2</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51141282V003</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>17</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51163492V002</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>5</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51163801V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>18</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51212364V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>26</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51321961V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>10</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51327299V000</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>2</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>22</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51337606V001</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>25</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM51337606V002</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>24</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM803474G01</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>19</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM803474G02</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>20</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM871713H01</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>14</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM871714H01</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>12</ReservationItem>
+                </Component>
+                <Component>
+                    <ProductNo>KM883747</ProductNo>
+                    <UOM>PCE</UOM>
+                    <Quantity>1</Quantity>
+                    <StorageLocation>1100</StorageLocation>
+                    <MoveType>261</MoveType>
+                    <SpecialStock />
+                    <SalesOrder />
+                    <SalesOrderItem />
+                    <ReservationNo>0337398095</ReservationNo>
+                    <ReservationItem>21</ReservationItem>
+                </Component>
+            </Components>
+        </Header>
+    </Message>
+</ProdConf>

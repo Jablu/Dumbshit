@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProdConf xmlns="http://www.Apriso.com/ProdConf.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SessionContext>
+        <EmployeeID>100000217</EmployeeID>
+        <EmployeeNo>ES2005</EmployeeNo>
+        <TransactionTime>2016-06-23T16:07:57.2879603</TransactionTime>
+        <Facility>KCC2</Facility>
+        <Department>PRODUCTION</Department>
+        <OperationID>100001282</OperationID>
+        <OperationRevision>K1X.PH1.1.001</OperationRevision>
+        <StepSequenceNo>1</StepSequenceNo>
+        <FunctionName>WriteXML</FunctionName>
+        <TransactionGUID>T4504</TransactionGUID>
+        <EquipmentID>0</EquipmentID>
+        <FunctionID>100022859</FunctionID>
+        <OperationCode>ProdConfirmation.SAP.WriteXml_Process</OperationCode>
+        <OprSequenceNo />
+        <LocalTransactionTime>2016-06-24T00:07:57.2879603</LocalTransactionTime>
+        <PartnerInfo>
+            <RCVPOR>SAPC64</RCVPOR>
+            <SNDPRN>FLEXNET</SNDPRN>
+            <RCVPRN>SAPLOG</RCVPRN>
+            <RCVPRT>LS</RCVPRT>
+            <SNDPOR>A000000022</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <CLNT>100</CLNT>
+        </PartnerInfo>
+        <PropertyBagV2>
+            <Item Name="PostingDate">
+                <ValueList>
+                    <Value>20160623</Value>
+                </ValueList>
+            </Item>
+            <Item Name="PostingTime">
+                <ValueList>
+                    <Value>160757</Value>
+                </ValueList>
+            </Item>
+        </PropertyBagV2>
+    </SessionContext>
+    <Message>
+        <Header>
+            <ProdConfMessageID>12226db8-6cc5-4b8a-a2c2-81d224b69b6e</ProdConfMessageID>
+            <Plant>KCC2</Plant>
+            <ProductionNo>4426825</ProductionNo>
+            <OperationConfirmationNo>0602769658</OperationConfirmationNo>
+            <OperationNo>0020</OperationNo>
+            <FinalConf>X</FinalConf>
+            <ClearRes>X</ClearRes>
+            <WorkCenter>KCC2ML02</WorkCenter>
+            <StartDate>20160623</StartDate>
+            <StartTime>144610</StartTime>
+            <FinishDate>20160623</FinishDate>
+            <FinishTime>160756</FinishTime>
+            <TimeSpanUnit>MIN</TimeSpanUnit>
+            <ExecutionTimeSimple>-77</ExecutionTimeSimple>
+            <ExecutionTimeLabor>-12</ExecutionTimeLabor>
+            <TotalDownTime>0</TotalDownTime>
+            <DownTimes />
+            <Components />
+        </Header>
+    </Message>
+</ProdConf>

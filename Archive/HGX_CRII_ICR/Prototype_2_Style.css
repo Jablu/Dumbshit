@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300');
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+body{
+	background-color:#E7E7E7;
+}
+
+.CenterBox{
+	margin:0% auto;
+	min-width:280px;
+	max-width:1200px;
+	min-height:720px;
+	padding:10px;
+	position:relative;
+	background-color:#fff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.24), 0 2px 6px rgba(0,0,0,0.24);
+}
+
+.Header{
+	height:56px;
+	background-color:#C51162;
+	margin:-10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.24), 0 2px 6px rgba(0,0,0,0.24);
+}
+
+.HeaderIcon{
+	height:36px;
+	width:36px;
+	margin-top:10px;
+	margin-left:18px;
+	float:left;
+	display:inline-block;
+}
+
+.HeadingText{
+	
+	color:#fff;
+	font-family: 'Open Sans Condensed', sans-serif; 
+	font-size:28px;
+	font-weight:900;
+	float:left;
+	display:inline-block;
+	margin-top:8px;
+	margin-left:18px;
+}
+
+.CenterBoxBody{
+	
+	padding-top:15px; 
+	
+}
+
+.Card{
+	min-width:200px;
+	float:left;
+	width:33.33%;
+	min-height:100px;
+	margin-top:20px;
+}
+
+.CardText{
+	margin-left:10px;
+	margin-top:20px;
+	font-family: 'Dosis', sans-serif;
+	font-size:16px;
+}
+
+.CardInput{
+	width:70%;
+	margin-top:5px;
+	border:none;
+	font-size:22px;
+	border-bottom:1px solid black;
+}
+
+.CardButton{
+	
+	
+	min-width:160px;
+	margin-top:8px;
+	padding:5px;
+	border:none;
+	font-size:20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 3px rgba(0,0,0,0.24);
+}
+
+.CardMain{
+	font-size:40px;
+	margin-top:12px;
+	font-family: 'Dosis', sans-serif;
+	font-weight:600;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+	border-bottom:3px solid black;
+}
+
+.loader {
+  border: 6px solid #efefef;
+  border-radius: 50%;
+  border-top: 6px solid #aaa;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.CenterBoxTable{
+	max-height:500px;
+	width:100%;
+	margin:0px auto;
+	margin-top:20px;
+}
+
+.CenterBoxTable th{
+	background-color:#757575;
+	color:#fff;
+	font-family: 'Open Sans Condensed', sans-serif; 
+	font-size:18px;
+	text-align:center;
+	padding:10px;
+}
+
+.CenterBoxTable tr{
+	padding:15px;
+	min-width:60px;
+	font-family: 'Dosis', sans-serif;
+	font-size:18px;
+	background-color:#dedede;
+	font-weight:600;
+}
+
+.CenterBoxTable td{
+	padding:10px;
+}
+
+.CenterBoxTable tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.TableInput{
+	opacity: 1;
+	border:none;
+	color:#000;
+	width:50%;
+	margin-top:1px;
+	border:none;
+	font-family: 'Open Sans Condensed', sans-serif; 
+	font-size:22px;
+	border-bottom:1px solid black;
+	text-align:center;
+}
+
+.SmallImageIcon{
+	
+	height:25px;
+	width:25px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

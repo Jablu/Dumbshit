@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClientGridProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Fuid>7d87a753-467a-438a-b023-bb048f8b5eb8</Fuid>
+   <SqlQuery>SELECT
+	APLC.ID,
+	P1.ProductNo,
+	APLC.SerialNumber,
+	APLC.OrderNumber,
+	APLC.TwoLines,
+	APLC.DummySN,
+	APLC.Facility,
+	ISNULL(APLC.LabelTypeID,0) AS LabelTypeID,
+	P2.ProductNo AS OldProductNo
+FROM 
+	AT_PRINTING_LABEL_CONFIGURATION APLC
+JOIN PRODUCT P1
+	ON APLC.ProductID = P1.ID
+LEFT JOIN PRODUCT P2
+	ON APLC.OldProductID = P2.ID
+WHERE
+	APLC.Facility = @Facility</SqlQuery>
+   <OracleQuery />
+   <Title>
+      <DefaultText />
+      <IsLinked>false</IsLinked>
+   </Title>
+   <GridColumns>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>ID</Id>
+         <Caption>
+            <DefaultText>ID</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>55a68f6b-2477-46e3-8540-60f97cab7c3d</TextFuid>
+         </Caption>
+         <DataType>Integer</DataType>
+         <IsUnique>true</IsUnique>
+         <NullValue xsi:type="xsd:int">-2147483648</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:int">-2147483648</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>ProductNo</Id>
+         <Caption>
+            <DefaultText>Product #</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>ad3631ad-3426-4bd8-93dd-2421584e4494</TextFuid>
+         </Caption>
+         <NullValue xsi:type="xsd:string">(null)</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:string" />
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>SerialNumber</Id>
+         <Caption>
+            <DefaultText>Serial Number</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>c2bc641b-a0b7-4e16-8252-affc5cb56c7d</TextFuid>
+         </Caption>
+         <DataType>Boolean</DataType>
+         <NullValue xsi:type="xsd:int">-1</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:boolean">false</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>OrderNumber</Id>
+         <Caption>
+            <DefaultText>Order Number</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>cb8a4486-b31b-45cb-b17c-302cda876dcd</TextFuid>
+         </Caption>
+         <DataType>Boolean</DataType>
+         <NullValue xsi:type="xsd:int">-1</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:boolean">false</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>TwoLines</Id>
+         <Caption>
+            <DefaultText>Two Lines</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>176827ab-6077-48b6-8399-0ffc888bb615</TextFuid>
+         </Caption>
+         <DataType>Boolean</DataType>
+         <NullValue xsi:type="xsd:int">-1</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:boolean">false</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>DummySN</Id>
+         <Caption>
+            <DefaultText>Dummy SN</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>29bbe19e-5b98-4180-8ba1-d7f67ff3f96f</TextFuid>
+         </Caption>
+         <DataType>Boolean</DataType>
+         <NullValue xsi:type="xsd:int">-1</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:boolean">false</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>Facility</Id>
+         <Caption>
+            <DefaultText>Facility</DefaultText>
+            <DictionaryCode>Facility</DictionaryCode>
+            <IsLinked>true</IsLinked>
+            <TextFuid>d4d91b05-a46b-4d88-a6d4-3df771412c00</TextFuid>
+         </Caption>
+         <NullValue xsi:type="xsd:string">(null)</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:string" />
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>LabelTypeID</Id>
+         <Caption>
+            <DefaultText>Label Type ID</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>b6f566e3-31b9-4811-9e89-382df3df3c75</TextFuid>
+         </Caption>
+         <DataType>Integer</DataType>
+         <NullValue xsi:type="xsd:int">-2147483648</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:int">-2147483648</InitialValue>
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+      <ClientGridColumn>
+         <ColumnType>Data</ColumnType>
+         <Id>OldProductNo</Id>
+         <Caption>
+            <DefaultText>Old Product #</DefaultText>
+            <IsLinked>false</IsLinked>
+            <TextFuid>d202f6c8-f1fd-480c-9b6d-0af305f2bd4c</TextFuid>
+         </Caption>
+         <NullValue xsi:type="xsd:string">(null)</NullValue>
+         <NullElement>
+            <DefaultText />
+            <IsLinked>false</IsLinked>
+         </NullElement>
+         <ValuesLookup>
+            <Mode>None</Mode>
+            <DiscreteValues />
+            <Query>
+               <ColumnAliases />
+               <ColumnTypes />
+            </Query>
+            <DynamicQuery>
+               <ColumnAliases />
+               <ColumnTypes />
+            </DynamicQuery>
+         </ValuesLookup>
+         <Summary>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>AggregationAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>AggregationAction</ActionType>
+            </Script>
+         </Summary>
+         <Footer>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>FooterAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>FooterAction</ActionType>
+            </Script>
+         </Footer>
+         <InitialValue xsi:type="xsd:string" />
+         <Refresh>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>RefreshAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>RefreshAction</ActionType>
+            </Script>
+         </Refresh>
+         <OnChangeAction>
+            <Mode>None</Mode>
+            <StandardOperation>
+               <OperationInputs />
+               <ActionType>OnChangeAction</ActionType>
+            </StandardOperation>
+            <Script>
+               <ActionType>OnChangeAction</ActionType>
+            </Script>
+         </OnChangeAction>
+         <ValidationScript>
+            <ActionType>ValidationAction</ActionType>
+         </ValidationScript>
+      </ClientGridColumn>
+   </GridColumns>
+   <Sorting />
+   <OracleHint />
+   <ShowRecordCount>true</ShowRecordCount>
+<PageSize>50</PageSize>
+<PagerPosition>Bottom</PagerPosition>
+<AllowExport>true</AllowExport>
+<SelectionMode>Multiple</SelectionMode>
+<RowSelectorAction>None</RowSelectorAction>
+<RowDoubleClickAction>None</RowDoubleClickAction>
+<SortingMode>Single</SortingMode>
+   <GridToolbarButtons>
+<ClientGridButton>
+<Action>
+<Mode>StandardOperation</Mode>
+<StandardOperation>
+<OperationCode>
+PrintingSetupConfiguration.DeleteConfiguration_Action
+</OperationCode>
+<OperationRevision/>
+<OperationInputs>
+<ActionInput>
+<Name>SelectedPSCIDList</Name>
+<Type>ListOfInteger</Type>
+<Mode>Dynamic</Mode>
+<Value>IDSelectedValues</Value>
+</ActionInput>
+</OperationInputs>
+<ActionType>ToolbarButtonAction</ActionType>
+</StandardOperation>
+<Script>
+<ActionType>ToolbarButtonAction</ActionType>
+</Script>
+<ExecutionMode>Synchronous</ExecutionMode>
+</Action>
+<Key>DELETE</Key>
+<Label>
+<DefaultText>Delete</DefaultText>
+<DictionaryCode>K1X_Delete</DictionaryCode>
+<IsLinked>true</IsLinked>
+<TextFuid>b8264260-e983-49a4-9500-627ba29c2775</TextFuid>
+</Label>
+<ToolTip>
+<DefaultText>Delete</DefaultText>
+<DictionaryCode>K1X_Delete</DictionaryCode>
+<IsLinked>true</IsLinked>
+<TextFuid>daee07cd-0877-4cb6-a2c2-ba1b0ccfdaa3</TextFuid>
+</ToolTip>
+<ConfirmationText>
+<DefaultText>Are you sure you want to remove a record?</DefaultText>
+<DictionaryCode>K1X_MSS_RemoveConfirm</DictionaryCode>
+<IsLinked>true</IsLinked>
+<TextFuid>6f78951a-4f3d-40ad-a81d-202904e535d5</TextFuid>
+</ConfirmationText>
+<ImageName>action_delete_p18.png</ImageName>
+<ToolPosition>BottomRight</ToolPosition>
+<AvailabilityMode>AtLeastOne</AvailabilityMode>
+<RefreshingMode>AllRows</RefreshingMode>
+<CssClass>T1</CssClass>
+</ClientGridButton>
+<ClientGridButton>
+<Action>
+<Mode>Script</Mode>
+<StandardOperation>
+<OperationInputs/>
+<ActionType>ToolbarButtonAction</ActionType>
+</StandardOperation>
+<Script>
+<Script>dgSelectAll('{0}', true);</Script>
+<ActionType>ToolbarButtonAction</ActionType>
+</Script>
+</Action>
+<Key>SelectAll</Key>
+<Label>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</Label>
+<ToolTip>
+<DefaultText>Select All</DefaultText>
+<IsLinked>false</IsLinked>
+<TextFuid>0f5aec5e-7fb7-41b9-a4aa-5993a2335a1f</TextFuid>
+</ToolTip>
+<ConfirmationText>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</ConfirmationText>
+<CssClass>action action_check_all</CssClass>
+</ClientGridButton>
+<ClientGridButton>
+<Action>
+<Mode>Script</Mode>
+<StandardOperation>
+<OperationInputs/>
+<ActionType>ToolbarButtonAction</ActionType>
+</StandardOperation>
+<Script>
+<Script>dgSelectAll('{0}', false);</Script>
+<ActionType>ToolbarButtonAction</ActionType>
+</Script>
+</Action>
+<Key>DeselectAll</Key>
+<Label>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</Label>
+<ToolTip>
+<DefaultText>Deselect All</DefaultText>
+<IsLinked>false</IsLinked>
+<TextFuid>e490daa0-fd4b-4f22-a63c-e542b4fd0ee0</TextFuid>
+</ToolTip>
+<ConfirmationText>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</ConfirmationText>
+<CssClass>action action_uncheck_all</CssClass>
+</ClientGridButton>
+<ClientGridButton>
+<Action>
+<Mode>Script</Mode>
+<StandardOperation>
+<OperationInputs/>
+<ActionType>ToolbarButtonAction</ActionType>
+</StandardOperation>
+<Script>
+<Script>dgGetData('{0}', 0);</Script>
+<ActionType>ToolbarButtonAction</ActionType>
+</Script>
+</Action>
+<Key>RefreshData</Key>
+<Label>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</Label>
+<ToolTip>
+<DefaultText>Refresh Data</DefaultText>
+<IsLinked>false</IsLinked>
+<TextFuid>ae59fea4-cbbf-4db3-9e20-2ba38bec5e78</TextFuid>
+</ToolTip>
+<ConfirmationText>
+<DefaultText/>
+<IsLinked>false</IsLinked>
+</ConfirmationText>
+<CssClass>action action_reload</CssClass>
+</ClientGridButton>
+</GridToolbarButtons>
+   <OnInsertOperation>
+      <OperationInputs />
+      <ActionType>InsertAction</ActionType>
+   </OnInsertOperation>
+   <OnUpdateOperation>
+      <OperationInputs />
+      <ActionType>UpdateAction</ActionType>
+   </OnUpdateOperation>
+   <OnDeleteOperation>
+      <OperationInputs />
+      <ActionType>DeleteAction</ActionType>
+   </OnDeleteOperation>
+   <IsSqlContextQueryDataProviderSql>true</IsSqlContextQueryDataProviderSql>
+   <IsOracleContextQueryDataProviderOracle>true</IsOracleContextQueryDataProviderOracle>
+   <DatabaseAlias>FlexNet</DatabaseAlias>
+   <SecurityConfiguration>
+      <Enabled>true</Enabled>
+      <Profiles>
+         <ClientGridSecurityProfile>
+            <ProfileName>[Enter security profile name here]</ProfileName>
+            <IsDefault>false</IsDefault>
+            <Roles />
+            <Columns>
+               <ClientGridSecurityColumn>
+                  <ID>ID</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>ProductNo</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>SerialNumber</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>OrderNumber</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>TwoLines</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>DummySN</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>Facility</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>LabelTypeID</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>OldProductNo</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+            </Columns>
+            <Buttons>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+            </Buttons>
+         </ClientGridSecurityProfile>
+         <ClientGridSecurityProfile>
+            <ProfileName>Default Profile (applied when others do not match)</ProfileName>
+            <IsDefault>true</IsDefault>
+            <Roles />
+            <Columns>
+               <ClientGridSecurityColumn>
+                  <ID>ID</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>ProductNo</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>SerialNumber</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>OrderNumber</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>TwoLines</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>DummySN</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>Facility</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>LabelTypeID</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+               <ClientGridSecurityColumn>
+                  <ID>OldProductNo</ID>
+                  <IsVisible>true</IsVisible>
+                  <IsEditable>false</IsEditable>
+               </ClientGridSecurityColumn>
+            </Columns>
+            <Buttons>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+               <ClientGridSecurityButton>
+                  <ID />
+                  <IsVisible>true</IsVisible>
+                  <IsEnabled>true</IsEnabled>
+               </ClientGridSecurityButton>
+            </Buttons>
+         </ClientGridSecurityProfile>
+      </Profiles>
+   </SecurityConfiguration>
+   <TestValues>
+      <PropertyBagItem Key="Facility_Value">
+         <Value xsi:type="xsd:string">KNEE</Value>
+      </PropertyBagItem>
+   </TestValues>
+</ClientGridProperties>
